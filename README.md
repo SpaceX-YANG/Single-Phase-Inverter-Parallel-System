@@ -10,8 +10,7 @@
 - **系统稳态：** 在各类并联与负载切换场景下，稳态运行表现极佳。
 
 ## 📂 仓库结构说明 (Repository Structure)
-- `Hardware_Design/` : 包含完整的系统原理图 (PDF) 与关键阻容滤波网络验证数据。
-- `STM32_Firmware/` : 基于 STM32F407 的核心底层 C 代码，包含 PLL 与 PI 控制核心逻辑。
+- `Hardware_Design/` : 包含报告与方案验证及芯片参数手册。
 - `Test_Reports_&_Photos/` : 包含实测示波器波形截图与硬件整机实物图。
 
 ## 🚀 研发反思与成长 (Engineering Takeaways)

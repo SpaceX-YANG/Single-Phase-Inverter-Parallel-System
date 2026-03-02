@@ -1,2 +1,18 @@
-# Single-Phase-Inverter-Parallel-System
-🏆 National Electronic Design Contest Award Project: A high-performance single-phase inverter parallel system based on STM32F407, featuring software PLL &amp; dual-loop PI control (THD 0.9%).
+# 单相逆变器并联运行系统 ⚡ (国电赛省级二等奖项目)
+
+## 💡 项目简介 (Project Overview)
+本项目为 2022 年全国大学生电子设计竞赛获奖作品。系统弃用了 MCU 内置 ADC，采用更高精度的外置 16 位 ADC（ADS8688）配合定制信号调理电路。在软件端基于 STM32F407 实现了软件锁相环（PLL）与电压电流双闭环 PI 控制，成功完成了主从机的 SPWM 波精确同步与均流分配。
+
+## 🛠️ 核心指标与实测性能 (Key Specifications)
+- **整机效率：** 89.2%
+- **总谐波失真 (THD)：** 0.9% (远优于 <2% 的竞赛标准)
+- **负载调整率：** 0.004% (远优于 ≤0.2% 的竞赛标准)
+- **系统稳态：** 在各类并联与负载切换场景下，稳态运行表现极佳。
+
+## 📂 仓库结构说明 (Repository Structure)
+- `Hardware_Design/` : 包含完整的系统原理图 (PDF) 与关键阻容滤波网络验证数据。
+- `STM32_Firmware/` : 基于 STM32F407 的核心底层 C 代码，包含 PLL 与 PI 控制核心逻辑。
+- `Test_Reports_&_Photos/` : 包含实测示波器波形截图与硬件整机实物图。
+
+## 🚀 研发反思与成长 (Engineering Takeaways)
+该项目是我从“理论电路”走向“系统级工程实践”的重要里程碑。在研发过程中，我主导了团队的技术方案评审，统筹了软硬件模块的联合调试。在此过程中，我大量应用了大语言模型辅助查阅全英文的 UCC28C4x 等芯片数据手册，极大地验证并提升了我的研发效能。

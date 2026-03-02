@@ -11,6 +11,7 @@
 
 ## 📂 仓库结构说明 (Repository Structure)
 - `Hardware_Design/` : 包含报告与方案验证及芯片参数手册。
+- `光伏并网发电/` :包含电流互感器、电压比较器、电压互感模块、精密整理的原理图与PCB。
 - `Test_Reports_&_Photos/` : 包含实测示波器波形截图与硬件整机实物图。
 
 ## 🚀 研发反思与成长 (Engineering Takeaways)
